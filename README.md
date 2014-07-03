@@ -10,21 +10,27 @@ example:
 package main
 
 import (
-        "fmt"
+	"fmt"
         "net/http"
         "github.com/lidashuang/goji_gzip"
 
         "github.com/zenazn/goji"
 )
 
+
 func main() {
 
-		goji.Use(gzip.GzipHandler)
+	// use gzip handle for every request
+	goji.Use(gzip.GzipHandler)
 
-    goji.Get("/", func(w http.ResponseWriter, r *http.Request){
-			fmt.Fprint(w, "helloworld..........")
-		})
+	goji.Get("/", func(w http.ResponseWriter, r *http.Request) {
+		fmt.Fprint(w, "helloworld..........")
+	})
 
-    goji.Serve()
+	goji.Serve()
 }
 ```
+
+TODO: 
+
+* add some test
