@@ -11,12 +11,11 @@ package main
 
 import (
 	"fmt"
-	"net/http"
 	"github.com/lidashuang/goji_gzip"
+	"net/http"
 
 	"github.com/zenazn/goji"
 )
-
 
 func main() {
 
@@ -30,7 +29,3 @@ func main() {
 	goji.Serve()
 }
 ```
-
-TODO: 
-
-* add some test
