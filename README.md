@@ -6,15 +6,15 @@ goji_gzip
 
 example:
 
-```golang
+```go
 package main
 
 import (
 	"fmt"
-        "net/http"
-        "github.com/lidashuang/goji_gzip"
+	"net/http"
+	"github.com/lidashuang/goji_gzip"
 
-        "github.com/zenazn/goji"
+	"github.com/zenazn/goji"
 )
 
 
